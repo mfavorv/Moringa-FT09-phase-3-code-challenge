@@ -1,4 +1,7 @@
-from .connection import get_db_connection
+import sys
+sys.path.append('/home/favor/LABS/PHASE 3/Moringa-FT09-phase-3-code-challenge')
+
+from database.connection import get_db_connection
 
 def create_tables():
     conn = get_db_connection()
